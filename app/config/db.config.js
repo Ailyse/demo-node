@@ -1,3 +1,7 @@
+var varenv = require('dotenv').config();
+
+var mongoPath = process.env.PATH_MONGO;
+
 module.exports = {
-    url: "mongodb://superuser:motdepasse@127.0.0.1:27017/"
+    url: mongoPath
   };
